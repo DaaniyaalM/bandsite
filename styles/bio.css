@@ -13,6 +13,11 @@
   src: url("../assets/Font/AvenirNextLTPro-Demi.woff2") format("woff");
   font-weight: 600;
 }
+* p {
+  font-family: "avenir";
+  font-size: 0.875rem;
+}
+
 .nav {
   display: flex;
   justify-content: center;
@@ -22,7 +27,7 @@
   background-color: #323232;
   color: white;
   font-family: "avenir", sans-serif;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 .nav__items {
   display: flex;
@@ -43,6 +48,7 @@
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/Images/hero-bio.jpg);
   background-size: cover;
   background-position: center center;
+  padding-bottom: 1.5rem;
 }
 
 .header__image {
@@ -54,7 +60,7 @@
   width: 100%;
 }
 
-.header__image2 {
+.header_image2 {
   background-image: url(../assets/Images/band.jpg);
   display: flex;
   justify-content: center;
@@ -67,6 +73,7 @@
 .body {
   display: flex;
   flex-direction: column;
+  background-color: #ffffff;
 }
 
 .title1 {
@@ -76,4 +83,99 @@
   padding: 0 1rem;
   font-family: "avenir", sans-serif;
   font-weight: 600;
-}/*# sourceMappingURL=bio.css.map */
+}
+
+.about {
+  color: #323232;
+  font-family: "avenir", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  padding: 0 1rem;
+}
+
+.sectionheader {
+  font-family: "avenir", sans-serif;
+  line-height: 1.375rem;
+  font-size: 0.875;
+  font-weight: 600;
+  padding: 0 1rem;
+  color: #323232;
+}
+
+.subheader {
+  font-family: "avenir", sans-serif;
+  line-height: 1.375rem;
+  font-size: 0.875;
+  font-weight: 600;
+  padding: 0 1rem;
+  color: #323232;
+}
+
+.imgcontainer {
+  background-color: #fafafa;
+}
+
+.photo1 {
+  background-color: #fafafa;
+  background-size: cover;
+  background-position: center center;
+  padding-bottom: 1.5rem;
+  width: 100%;
+}
+
+.gallery2 {
+  background-color: #fafafa;
+  aspect-ratio: 16/9;
+  background-size: cover;
+  background-position: center center;
+  padding-bottom: 1.5rem;
+  background-image: url("../assets/Images/Photo-gallery-2.jpg");
+}
+
+.gallery3 {
+  background-color: #fafafa;
+  display: flex;
+  aspect-ratio: 16/9;
+  background-size: cover;
+  background-position: center center;
+  padding-bottom: 1.5rem;
+  background-image: url("../assets/Images/Photo-gallery-3.jpg");
+}
+
+.footer {
+  background-color: #323232;
+  display: flex;
+  flex-direction: column;
+}
+.footer__icons {
+  display: flex;
+  width: 50%;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 0 1rem;
+}
+.footer__subheader {
+  font-family: "avenir", sans-serif;
+  line-height: 1.375rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  padding: 0 1rem;
+  color: #ffffff;
+}
+.footer__p {
+  font-family: "avenir", sans-serif;
+  line-height: 1.375rem;
+  font-size: 0.8125rem;
+  font-weight: 400;
+  padding: 0 1rem;
+  color: #ffffff;
+}
+.footer__finalfont {
+  color: white;
+  font-family: "avenir", sans-serif;
+  font-size: 1.5em;
+  padding: 0 1rem;
+}
+
+/* CSS rules for smaller screens *//*# sourceMappingURL=bio.css.map */

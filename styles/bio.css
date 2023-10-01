@@ -1,0 +1,79 @@
+@font-face {
+  font-family: "avenir";
+  src: url("../assets/Font/AvenirNextLTPro-Regular.woff2") format("woff");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "avenir";
+  src: url("../assets/Font/AvenirNextLTPro-Bold.woff2") format("woff");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "avenir";
+  src: url("../assets/Font/AvenirNextLTPro-Demi.woff2") format("woff");
+  font-weight: 600;
+}
+.nav {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  justify-items: start;
+  width: 100%;
+  background-color: #323232;
+  color: white;
+  font-family: "avenir", sans-serif;
+  font-size: 20px;
+}
+.nav__items {
+  display: flex;
+  flex-direction: row;
+}
+.nav__item {
+  width: 50%;
+  text-align: center;
+}
+.nav__logo {
+  text-align: center;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  aspect-ratio: 16/9;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/Images/hero-bio.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.header__image {
+  display: flex;
+  justify-content: flex-start;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+}
+
+.header__image2 {
+  background-image: url(../assets/Images/band.jpg);
+  display: flex;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+}
+
+.title1 {
+  color: white;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  padding: 0 1rem;
+  font-family: "avenir", sans-serif;
+  font-weight: 600;
+}/*# sourceMappingURL=bio.css.map */

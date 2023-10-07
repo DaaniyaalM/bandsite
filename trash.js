@@ -1,33 +1,60 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const commentForm = document.querySelector(".comment-form");
-  const commentsDiv = document.querySelector(".comments");
+  const commentForm = document.querySelector(".comments__form");
+  const commentsDiv = document.querySelector(".comments__list-item");
 
-  const comments = Array.from(commentsDiv.getElementsByClassName("comment"));
+  const commentsArray = [
+    {
+      username: "Connor Walton",
+      commentText:
+        "This is art. This is inexplicable magic expressed in the purest way, everything that makes up this majestic work deserves reverence. Let us appreciate this for what it is and what it contains.",
+      date: new Date("2023-12-20"),
+    },
+    {
+      username: "Emilie Beach",
+      commentText: "I love this content!",
+      date: new Date("2023-12-20"),
+    },
+    {
+      username: "Miles Acosta",
+      commentText:
+        "I can't stop listening. Every time I hear one of their songs - the vocals - it gives me goosebumps. Shivers straight down my spine. What a beautiful expression of creativity. Can't get enough.",
+      date: new Date("2023-12-20"),
+    },
+  ];
+
   commentForm.addEventListener("submit", function (e) {
     e.preventDefault();
-    const nameInput = document.querySelector(".name");
-    const commentInput = document.querySelector(".comment-text");
-    const name = nameInput.value;
-    const comment = commentInput.value;
-    const newComment = document.createElement("div");
 
-    newComment.className = "comment";
-    newComment.innerHTML = `<strong>${name}:</strong> ${comment}`;
-    comments.unshift(newComment);
+    const nameInput = commentForm.querySelector(".name");
+    const commentInput = commentForm.querySelector(".comments__text");
 
-    nameInput.value = "";
-    commentInput.value = "";
-    commentsDiv.innerHTML = "";
-    comments.forEach(function (commentElement) {
-      commentsDiv.appendChild(commentElement);
-    });
+    if (nameInput && commentInput) {
+      const name = nameInput.value;
+      const comment = commentInput.value;
+      const currentDate = new Date();
+      const newComment = {
+        username: name,
+        commentText: comment,
+        date: Date.now(),
+      };
+
+      commentsArray.unshift(newComment);
+
+      nameInput.value = "";
+      commentInput.value = "";
+
+      const commentElement = document.createElement("div");
+      commentElement.className = "comment";
+      commentElement.innerHTML = `<strong>${newComment.username}:</strong> ${newComment.commentText}`;
+
+      commentsDiv.insertBefore(commentElement, commentsDiv.firstChild);
+    }
+  });
+
+  commentsArray.forEach(function (comment) {
+    const commentElement = document.createElement("div");
+    commentElement.className = "comment";
+    commentElement.innerHTML = `<strong>${comment.username}:</strong> ${comment.commentText}`;
+    commentsDiv.appendChild(commentElement);
   });
 });
-
-// const artistsArray = [
-//     { name: "Bibbidy Bob", musicStyle: "Rock & Roll", date: Date.now() },
-//     { name: "Bobbody Bib", musicStyle: "Roll & Rock", date: Date.now() },
-//     { name: "Hibbidy Hob", musicStyle: "Hip-Hop", date: Date.now() },
-//     { name: "Clippity Clop", musicStyle: "Dance", date: Date.now() },
-//     { name: "Javvadi Dav", musicStyle: "Folk", date: Date.now() },
-//   ];

@@ -1,0 +1,149 @@
+@font-face {
+  font-family: "avenir";
+  src: url("../assets/Font/AvenirNextLTPro-Regular.woff2") format("woff");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "avenir";
+  src: url("../assets/Font/AvenirNextLTPro-Bold.woff2") format("woff");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "avenir";
+  src: url("../assets/Font/AvenirNextLTPro-Demi.woff2") format("woff");
+  font-weight: 600;
+}
+
+.container1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.shows {
+  color: #323232;
+  font-family: "avenir", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  padding: 0 1rem;
+}
+.container {
+  text-align: center;
+  margin: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+}
+
+* p {
+  font-family: "avenir";
+  font-size: 0.875rem;
+}
+.nav {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  justify-items: start;
+  width: 100%;
+  background-color: #323232;
+  color: white;
+  font-family: "avenir", sans-serif;
+  font-size: 1.25rem;
+
+  &__items {
+    display: flex;
+    flex-direction: row;
+  }
+  &__item {
+    width: 50%;
+    text-align: center;
+  }
+  &__logo {
+    text-align: center;
+  }
+}
+.container {
+  display: flex;
+  align-items: center;
+  aspect-ratio: 16/9;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../assets/Images/Photo-gallery-1.jpg);
+  background-size: cover;
+  background-position: center center;
+  padding-bottom: 1.5rem;
+}
+
+tr {
+  display: flex;
+  flex-direction: column;
+  font-family: "avenir";
+  font-size: 0.875rem;
+}
+
+td {
+  font-family: "avenir";
+  font-size: 0.875rem;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.soundcloud-wrapper {
+  width: 100%;
+  padding: 1rem;
+}
+
+.shows__header {
+  font-family: "avenir";
+  font-size: 2rem;
+}
+
+.tr-border {
+  display: flex;
+  flex-direction: column;
+  font-family: "avenir";
+  font-size: 0.875rem;
+}
+
+td:last-child {
+  border-bottom: 2px solid #e1e1e1;
+}
+
+td:first-child {
+  font-weight: 600;
+  color: #afafaf;
+}
+
+tr td.date-cell {
+  font-weight: 700;
+  font-family: "avenir";
+}
+
+.numerical-date-cell {
+  font-family: "avenir", sans-serif;
+  font-weight: 700;
+}
+
+.buy-tickets-button {
+  background-color: #323232;
+  color: #ffff;
+  text-align: center;
+  border-radius: 5px;
+  font-family: "avenir";
+  width: 100%;
+  height: 3.125rem;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 1px;
+}

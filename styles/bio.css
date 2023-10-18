@@ -178,4 +178,13 @@
   padding: 0 1rem;
 }
 
+.comment-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.comments__list-item {
+  list-style: none;
+}
+
 /* CSS rules for smaller screens *//*# sourceMappingURL=bio.css.map */

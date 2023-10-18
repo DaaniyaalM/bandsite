@@ -1,3 +1,5 @@
+//@use "./partials/medialqueries" as *;
+
 @font-face {
   font-family: "avenir";
   src: url("../assets/Font/AvenirNextLTPro-Regular.woff2") format("woff");
@@ -177,6 +179,14 @@
     font-size: 1.5em;
     padding: 0 1rem;
   }
+}
+.comment-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.comments__list-item {
+  list-style: none;
 }
 // @media (max-width: 768px) {
 /* CSS rules for smaller screens */
